@@ -1,10 +1,10 @@
 {% set provider= "OpenTelekomCloud" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 {% set name = "terraform-provider-" + provider.lower() %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
 
-{% set sha256 = "a8bc4a8a3f7bf9d0e0a863e4fa40566a04a7cf2e6d6537997e1cb9bcd0dff360" %}
+{% set sha256 = "19f4793b251612c729b35fe7ea5a936d81379e5f39711e7557d39422f3827924" %}
 {% set sha256_win32 = "c93919f084a3d8a166863337d69a4f05c8de8f169cc0ad7ba003fa799b35f222" %}
 {% set sha256_win64 = "b2584184d21875cdc1aa37785b4bf6838fcbb20166577ee944df3f721b77a074" %}
 
