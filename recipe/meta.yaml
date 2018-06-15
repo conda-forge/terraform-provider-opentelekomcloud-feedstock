@@ -11,7 +11,7 @@ package:
 source:
   url: https://github.com/terraform-providers/{{ name }}/archive/v{{ version }}.tar.gz  # [not win]
   fn: {{ name }}-{{ version }}.tar.gz  # [not win]
-  sha256: 19f4793b251612c729b35fe7ea5a936d81379e5f39711e7557d39422f3827924  # [not win]
+  sha256: f00699257be460fb69ad4a36c1015332507f3f8757cdfccc230f7bc5d9b755e1  # [not win]
 
   url: https://releases.hashicorp.com/{{ name }}/{{ version }}/{{ name }}_{{ version }}_windows_amd64.zip  # [win64]
   fn: {{ name }}-{{ version }}.zip  # [win]
