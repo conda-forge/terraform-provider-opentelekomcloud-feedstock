@@ -15,7 +15,7 @@ source:
 
   url: https://releases.hashicorp.com/{{ name }}/{{ version }}/{{ name }}_{{ version }}_windows_amd64.zip  # [win64]
   fn: {{ name }}-{{ version }}.zip  # [win]
-  sha256: b2584184d21875cdc1aa37785b4bf6838fcbb20166577ee944df3f721b77a074  # [win64]
+  sha256: aafd3de4f3fbff32d612c619d5f0490db7bea1e0b800cc63614ec085e2c02397  # [win64]
 
 build:
   number: 0
