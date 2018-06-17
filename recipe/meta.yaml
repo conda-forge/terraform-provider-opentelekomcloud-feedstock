@@ -1,12 +1,8 @@
-{% set provider= "OpenTelekomCloud" %}
-{% set version = "1.0.0" %}
+{% set provider = "OpenTelekomCloud" %}
+{% set version = "1.1.0" %}
 
 {% set name = "terraform-provider-" + provider.lower() %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
-
-{% set sha256 = "a8bc4a8a3f7bf9d0e0a863e4fa40566a04a7cf2e6d6537997e1cb9bcd0dff360" %}
-{% set sha256_win32 = "c93919f084a3d8a166863337d69a4f05c8de8f169cc0ad7ba003fa799b35f222" %}
-{% set sha256_win64 = "b2584184d21875cdc1aa37785b4bf6838fcbb20166577ee944df3f721b77a074" %}
 
 package:
   name: {{ name|lower }}
@@ -15,13 +11,11 @@ package:
 source:
   url: https://github.com/terraform-providers/{{ name }}/archive/v{{ version }}.tar.gz  # [not win]
   fn: {{ name }}-{{ version }}.tar.gz  # [not win]
-  sha256: {{ sha256 }}  # [not win]
+  sha256: f00699257be460fb69ad4a36c1015332507f3f8757cdfccc230f7bc5d9b755e1  # [not win]
 
-  url: https://releases.hashicorp.com/{{ name }}/{{ version }}/{{ name }}_{{ version }}_windows_386.zip  # [win32]
   url: https://releases.hashicorp.com/{{ name }}/{{ version }}/{{ name }}_{{ version }}_windows_amd64.zip  # [win64]
   fn: {{ name }}-{{ version }}.zip  # [win]
-  sha256: {{ sha256_win32 }}  # [win32]
-  sha256: {{ sha256_win64 }}  # [win64]
+  sha256: aafd3de4f3fbff32d612c619d5f0490db7bea1e0b800cc63614ec085e2c02397  # [win64]
 
 build:
   number: 0
@@ -46,7 +40,7 @@ about:
   license: MPL 2.0
   summary: The Terraform {{ provider }} provider
   doc_url: https://www.terraform.io/docs/providers/{{ provider|lower }}/index.html
-  dev_url: https://https://github.com/terraform-providers/{{ name }}
+  dev_url: https://github.com/terraform-providers/{{ name }}
 
 extra:
   recipe-maintainers:
