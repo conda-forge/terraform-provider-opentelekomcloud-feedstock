@@ -17,7 +17,7 @@ source:
     sha256: aafd3de4f3fbff32d612c619d5f0490db7bea1e0b800cc63614ec085e2c02397  # [win64]
 
 build:
-  number: 1
+  number: 1001
   script:
     - XCOPY src\github.com\terraform-providers\{{ name|lower }}\{{ x4_plugin }}.exe %LIBRARY_BIN%  # [win]
 
