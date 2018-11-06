@@ -1,5 +1,5 @@
 {% set provider = "OpenTelekomCloud" %}
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 
 {% set name = "terraform-provider-" + provider.lower() %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
@@ -11,10 +11,10 @@ package:
 source:
   - folder: src/github.com/terraform-providers/{{ name|lower }}
     url: https://github.com/terraform-providers/{{ name }}/archive/v{{ version }}.tar.gz  # [not win]
-    sha256: 76275da5221fe731e4d35bf14bea1cb63808822df00a73e949667650e82f9c86  # [not win]
+    sha256: aac9dd3bd2b94214808569d625674ae9b3d19d267a3c3fcad0beb9fe4f1fa07b  # [not win]
 
     url: https://releases.hashicorp.com/{{ name }}/{{ version }}/{{ name }}_{{ version }}_windows_amd64.zip  # [win64]
-    sha256: ee0ad7f19be52736742a4fda203f96c03dfe066daf527831872e13a8e02364c6  # [win64]
+    sha256: 9b71888931cbdccf80323626ae2d0860319a4f9a12f24de3589468746158945f  # [win64]
 
 build:
   number: 0
