@@ -1,6 +1,6 @@
 {% set provider = "OpenTelekomCloud" %}
 {% set goname = "github.com/terraform-providers/terraform-provider-"+provider.lower() %}
-{% set version = "1.10.0" %}
+{% set version = "1.9.0" %}
 
 {% set name = goname.split('/')[-1] %}
 {% set pkg_src = ('src/'+goname).replace("/",os.sep) %}
@@ -14,7 +14,7 @@ package:
 source:
   - folder:  {{ pkg_src }}
     url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-    sha256: 7edde85cec35d4e9b1d50c448d0c5dc6bf7b3f82f0ab98a5b3dce4dde572c387
+    sha256: 1b73e9d130fd4b270633bb01793670a483ae1fc2998747a6984f96ea5db48b7e
 
 
 build:
